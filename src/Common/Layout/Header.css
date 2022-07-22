@@ -1,0 +1,10 @@
+.header-ctr {
+    height: 8%;
+    background-color: #9932cc;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 25px;
+}

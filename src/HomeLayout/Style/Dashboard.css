@@ -1,0 +1,202 @@
+.dashboard-container {
+    width: 95%;
+    height: 100%;
+    background-color: rgb(174, 145, 202);
+}
+
+.dashboard-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 95%;
+}
+
+.dashboard-container .dashboard-card-inner-conatiner {
+    display: flex;
+    padding: 0px;
+}
+
+.dashboard-title {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 21px;
+    color: rgb(106, 54, 132);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.describtion-add-expense-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.describtion-container {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(50, 6, 72, 0.05);
+}
+.add-expense-container {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: OpenSans-Regular, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(50, 6, 72, 0.05);
+}
+.add-expense-inner-container {
+    width: 99%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+.add-expense-title {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.add-expense-input-ctr {
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 10px;
+}
+.add-expense-input-ctr label {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(106, 54, 132);
+    text-align: left;
+    width: 25%;
+}
+.add-expense-container input {
+    width: 75%;
+    text-align: left;
+}
+.add-expense-container .add-expense-btn {
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: rgb(106, 54, 132);
+}
+.add-expense-container .cancel-expense-btn {
+    background-color: rgb(217, 217, 217);
+    color: black;
+}
+.total-dashboard-amount-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 21px;
+    width: 100%;
+    height: 50%;
+}
+
+/*Expense List */
+.expense-list-conatiner {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expense-list-title {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 21px;
+    background-color: rgba(50, 6, 72, 0.05);
+    color: rgb(106, 54, 132);
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.expense-item-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    overflow: auto;
+}
+.expense-item-inner-list {
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+.expense-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+.expense-item-name,
+.expense-amount,
+.expense-edit-btn,
+.expense-delete-btn,
+.expense-sno {
+    text-align: left;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(106, 54, 132);
+    font-weight: bold;
+    font-family: OpenSans-Regular, sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+}
+.expense-item-name {
+    width: 58%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.expense-edit-btn {
+    width: 8%;
+    background-color: rgb(110, 110, 225);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.expense-delete-btn {
+    width: 8%;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(255, 115, 115);
+    color: white;
+    justify-content: center;
+}
+.expense-amount {
+    width: 15%;
+    justify-content: center;
+}
+
+.expense-sno {
+    width: 10%;
+    text-align: center;
+    justify-content: center;
+}
+@media (max-width: 960px) {
+    .dashboard-container .dashboard-card-inner-conatiner {
+        flex-direction: column;
+        max-height: 100%;
+        overflow: auto;
+    }
+    .describtion-add-expense-container {
+        width: 100%;
+    }
+    .expense-list-conatiner {
+        width: 100%;
+    }
+    .total-dashboard-amount-container {
+        margin-top: 10px;
+    }
+}
